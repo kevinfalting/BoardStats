@@ -1,0 +1,16 @@
+{
+  "name": "BoardStats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Kevin Falting",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.8.8",
+    "electron-store": "^2.0.0",
+    "gkm": "^0.1.0"
+  }
+}
