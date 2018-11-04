@@ -18,4 +18,4 @@ npm i -g electron-packager
 electron-packager .
 ```
 
-If you set it to always start on startup, and it will keep track of every key you press. Would like to eventually do some cool stats, maybe even display a heatmap of the keyboard or something. For now, this is just my first electron app. Enjoy.
+If you set it to always start on startup, it will keep track of every key you press. Would like to eventually do some cool stats, maybe even display a heatmap of the keyboard or something. For now, this is just my first electron app. Enjoy.
