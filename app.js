@@ -25,15 +25,19 @@ gkm.events.on('key.*', function(key) {
 });
 
 function setMenu() {
-  let arr = [];
+  let sortable = [];
   for (let item in store.store) {
-    arr.push(item);
+    sortable.push([item, store.store[item]]);
   }
-  arr.sort();
-  template = arr.map((key, i) => {
+
+  sortable.sort((a, b) => {
+    return b[1] - a[1];
+  });
+
+  template = sortable.map((key, i) => {
     return {
       id: i,
-      label: `${key}: ${store.store[key]}`
+      label: `${key[1]}: ${key[0]}`
     };
   });
 
